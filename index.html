@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<HTML>
+    <HEAD>
+        <TITLE>Log-In</TITLE>
+        <script>
+            document.addEventListener('contextmenu', event => event.preventDefault());
+        </script>
+        <STYLE>
+            BODY {
+                margin: 0px;
+                font-family: Segoe UI Light;
+                font-style: normal;
+                -webkit-user-select: none;
+                user-select: none;
+            }
+            P::selection, IMG::selection {
+                color: white;
+                background-color: transparent;
+            }
+            P, IMG, A {
+                cursor: default;
+                -webkit-user-select: none;
+                -webkit-user-drag: none;
+                -webkit-app-region: no-drag;
+                user-select: none;
+            }
+            IMG.bg {
+                width: 100%;
+                position: fixed;
+            }
+            IMG.User {
+                width: 150px;
+                border-radius: 100%;
+                position: fixed;
+                top: 350px;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+            }
+            INPUT.Username {
+                height: 24px;
+                width: 247.5px;;
+                border: 2px transparent solid;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                background-color: black;
+                opacity: 55%;
+                letter-spacing: -0.5px;
+                padding-left: 5px;
+                font-size: 17px;
+            }
+            INPUT.Password {
+                height: 24px;
+                width: 215.5px;;
+                border: 2px transparent solid;
+                position: fixed;
+                top: 50%;
+                left: 44%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                background-color: black;
+                opacity: 55%;
+                letter-spacing: -0.5px;
+                padding-left: 5px;
+                font-size: 17px;
+            }
+            DIV.Username {
+                height: 30px;
+                width: 250px;;
+                border: 2px #D0D0D0 solid;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                letter-spacing: -0.5px;
+                padding-left: 5px;
+                font-size: 17px;
+            }
+            DIV.Password {
+                height: 30px;
+                width: 250px;
+                border: 2px #D0D0D0 solid;
+                position: fixed;
+                top: 54%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                letter-spacing: -0.5px;
+                padding-left: 5px;
+                font-size: 17px;
+            }
+            INPUT:hover {
+                opacity: 70%;
+            }
+            INPUT:focus {
+                background-color: white;
+                opacity: 100%;
+                color: #0D0D0D;
+            }
+            DIV:hover {
+                border: 2px white solid;
+            }
+            DIV:focus {
+                border: 2px white solid;
+            }
+            P.ab {
+                position: fixed;
+                top: 430px;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 40px;
+            }
+            IMG.enter {
+                position: fixed;
+                width: 30px;
+                top: 0%;
+                left: 224px;
+            }
+            IMG.enter2 {
+                position: fixed;
+                width: 32px;
+                top: 0%;
+                left: 222.5px;
+                opacity: 50%;
+            }
+            A.bt {
+                position: fixed;
+                bottom: 5%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                font-size: 50px;
+                color: red;
+            }
+            P.Benutzername {
+                content: "Benutzername";
+                position: fixed;
+                top: -15%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                letter-spacing: -0.5px;
+                padding-right: 150px;
+                font-size: 17px;
+                color: white;
+            }
+            P.Kennwort {
+                content: "Benutzername";
+                position: fixed;
+                top: -15%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                letter-spacing: -0.5px;
+                padding-right: 180px;
+                font-size: 17px;
+                color: white;
+            }
+            INPUT {
+                outline: none;
+            }
+            P.Text {
+                position: fixed;
+                top: 55.6%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                color: #FFFFFF;
+                font-size: 17px;
+            }
+            TABLE.Icons {
+                position: fixed;
+                right: 20px;
+                bottom: 10px
+            }
+            TD.Icons {
+                padding-left: 10px;
+            }
+            TD.BG {
+                position: fixed;
+            }
+            IMG.Buttons {
+                width: 40px;
+            }
+            IMG.ButtonsBG {
+                margin-right: -50px;
+                margin-bottom: -5px;
+                width: 50px;
+                opacity: 0%;
+            }
+            IMG.ButtonsBG:hover {
+                opacity: 40%;
+            }
+        </STYLE>
+    </HEAD>
+    <BODY onload="window.open('','_self',');">
+        <IMG class="bg" SRC="bg.jpg"></IMG>
+        <IMG class="User" SRC="User.png"></IMG>
+        <P class="ab">Anderer Benutzer</P>
+        <DIV class="Username">
+            <INPUT class="Username" spellcheck="false" value="" placeholder="Benutzername" type="text"></INPUT>
+        </DIV>
+        <DIV class="Password">
+            <INPUT class="Password" value="" placeholder="Kennwort" type="password"></INPUT>
+            <A href="javascript:window.close();">
+            <IMG class="enter2" SRC="enter2.jpg"></IMG>
+            <IMG class="enter" SRC="enter.png"></IMG>
+            </A>
+        </DIV>
+        <P class="Text">Anmelde-Domäne: SCHULE</P>
+        <TABLE class="Icons">
+            <TR>
+                <TD class="Icons">
+                    <IMG class="ButtonsBG" SRC="enter2.jpg"></IMG>
+                    <IMG class="Buttons" src="Network.png"></IMG>
+                </TD>
+                <TD class="Icons">
+                    <IMG class="ButtonsBG" SRC="enter2.jpg"></IMG>
+                    <IMG class="Buttons" src="Power.png"></IMG>
+                </TD>
+            </TR>
+        </TABLE>
+    </BODY>
+</HTML>

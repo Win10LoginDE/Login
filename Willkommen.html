@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<HTML>
+    <HEAD>
+        <TITLE>Log-In</TITLE>
+        <script>
+            document.addEventListener('contextmenu', event => event.preventDefault());
+        </script>
+        <STYLE>
+            BODY {
+                margin: 0px;
+                font-family: Segoe UI Light;
+                font-style: normal;
+                -webkit-user-select: none;
+                user-select: none;
+            }
+            P::selection, IMG::selection {
+                color: white;
+                background-color: transparent;
+            }
+            P, IMG {
+                cursor: default;
+                -webkit-user-select: none;
+                -webkit-user-drag: none;
+                -webkit-app-region: no-drag;
+                user-select: none;
+            }
+            IMG.bg {
+                width: 100%;
+                position: fixed;
+            }
+            IMG.User {
+                width: 150px;
+                border-radius: 100%;
+                position: fixed;
+                top: 350px;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+            }
+            INPUT.Username {
+                height: 30px;
+                width: 250px;;
+                border: 2px #F0F0F0 solid;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                color: gray;
+                background-color: black;
+                opacity: 55%;
+                letter-spacing: -0.5px;
+                padding-left: 5px;
+                font-size: 17px;
+            }
+            INPUT.Password {
+                height: 30px;
+                width: 250px;
+                border: 2px #F0F0F0 solid;
+                position: fixed;
+                top: 54%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                color: gray;
+                background-color: black;
+                opacity: 55%;
+                letter-spacing: -0.5px;
+                padding-left: 5px;
+                font-size: 17px;
+            }
+            INPUT:hover {
+                border: 2px white solid;
+                opacity: 70%;
+            }
+            INPUT:focus {
+                background-color: white;
+                opacity: 100%;
+                color: #A0A0A0;
+            }
+            P.ab {
+                position: fixed;
+                top: 430px;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 40px;
+            }
+            IMG.enter {
+                position: fixed;
+                width: 30px;
+                top: 54%;
+                left: 55.756%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+            }
+            IMG.enter2 {
+                position: fixed;
+                width: 30px;
+                top: 54%;
+                left: 55.756%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                opacity: 50%;
+            }
+            IMG.enter:hover ~ IMG.enter2{
+                opacity: 80%;
+            }
+            A {
+                position: fixed;
+                bottom: 5%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                font-size: 50px;
+                color: red;
+            }
+            P.welcome {
+                position: fixed;
+                top: 47%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 25px;
+            }
+        </STYLE>
+    </HEAD>
+    <BODY onload="window.open('','_self',');">
+        <IMG class="bg" SRC="bg.jpg">
+        <IMG class="User" SRC="User.png">
+        <P class="ab">Anderer Benutzer</P>
+        <P class="welcome">Willkommen...</p>
+        <A href="javascript:window.close();">Close!</A>
+    </BODY>
+</HTML>
